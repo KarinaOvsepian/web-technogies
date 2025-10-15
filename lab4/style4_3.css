@@ -1,0 +1,25 @@
+a {
+    color: purple;
+}
+
+.main-list-item {
+    color: green;
+}
+
+.first-list-marker {
+    list-style-type: square;
+}
+.second-list-marker {
+    list-style-image: url(li.svg);
+}
+ul li ul {
+    list-style-type: none;
+}
+
+.first-list-marker a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}
