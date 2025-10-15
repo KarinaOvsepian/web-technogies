@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Task 3</title>
+</head>
+<body>
+<a href="../index.html">Повернутися назад</a>
+<h1 align="center">Анкета користувача</h1>
+
+<form action="" method="get" accept-charset="utf-8">
+    <fieldset>
+        <legend>Особисті дані</legend>
+
+        <label for="fname">Ім'я:</label><br>
+        <input id="fname" name="fname" type="text" placeholder="Введіть ім'я" tabindex="1" required value=""><br><br>
+
+        <label for="lname">Прізвище:</label><br>
+        <input id="lname" name="lname" type="text" placeholder="Введіть прізвище" tabindex="2" required value=""><br><br>
+
+        <label for="bdate">Дата народження:</label><br>
+        <input id="bdate" name="birthdate" type="date" tabindex="3"><br><br>
+
+        <label for="phoneA">Мобільний номер:</label><br>
+        <input id="phoneA" name="phone" type="tel" placeholder="+380XXXXXXXXX"
+               pattern="^\+?\d{9,15}$"
+               title="Номер: лише цифри, можливо '+' на початку, 9-15 цифр"
+               tabindex="4" required><br><br>
+
+        <label for="emailA">Електронна пошта:</label><br>
+        <input id="emailA" name="email" type="email" placeholder="example@mail.com"
+               autocomplete="off"
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               title="Введіть коректну електронну адресу"
+               tabindex="5" required><br><br>
+
+        <label for="pwd">Пароль (6 символів: 1 велика, 1 мала, 1 цифра):</label><br>
+
+        <input id="pwd" name="password" type="password"
+               placeholder="Наприклад: Abc123"
+               pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{6}"
+               title="6 символів, з принаймні 1 великою літерою, 1 малою та 1 цифрою"
+               tabindex="6" required><br><br>
+
+        <label for="about">Коротко про себе:</label><br>
+        <textarea id="about" name="about" placeholder="Розкажіть кілька слів..." rows="4" cols="50" tabindex="7"></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Додатково</legend>
+        <div>
+            <p>Сімейний статус:</p>
+            <label><input type="radio" name="family_form" value="single" tabindex="8" required> Самотній/Самотня</label><br>
+            <label><input type="radio" name="family_form" value="married" tabindex="9"> Одружений/Заміжня</label><br>
+            <label><input type="radio" name="family_form" value="divorced" tabindex="10"> Розлучений/Розлучена</label><br>
+        </div>
+        <br>
+
+        <div>
+            <p>Діти:</p>
+            <label><input type="radio" name="kids" value="none" tabindex="11"> Немає</label><br>
+            <label><input type="radio" name="kids" value="one" tabindex="12" checked> Одна дитина</label><br>
+            <label><input type="radio" name="kids" value="more" tabindex="13"> Більше двох дітей</label><br>
+        </div>
+        <br>
+
+        <div>
+            <p>Захоплення (можна обрати декілька):</p>
+            <label><input type="checkbox" name="interest_music" value="music" tabindex="14"> Музика</label><br>
+            <label><input type="checkbox" name="interest_sport" value="sport" tabindex="15"> Спорт</label><br>
+            <label><input type="checkbox" name="interest_read" value="reading" tabindex="16"> Читання</label><br>
+            <label><input type="checkbox" name="interest_dance" value="dancing" tabindex="17"> Танці</label><br>
+        </div>
+        <br>
+
+        <label for="favcolor">Улюблений колір:</label><br>
+        <select id="favcolor" name="favcolor" tabindex="18" required>
+            <option value="red">Червоний</option>
+            <option value="green">Блакитний</option>
+            <option value="blue" selected>Рожевий</option>
+            <option value="yellow">Жовтий</option>
+            <option value="black">Чорний</option>
+        </select><br><br>
+
+
+        <label for="langs">Мови, якими володієте (можна обрати декілька):</label><br>
+        <select id="langs" name="langs[]" multiple size="4" tabindex="19">
+            <option value="c">Українська</option>
+            <option value="cpp">Англійська</option>
+            <option value="java">Німецька</option>
+            <option value="py">Французька</option>
+            <option value="js">Іспанська</option>
+            <option value="rs">Арабська</option>
+        </select><br><br>
+
+        <label for="study">Улюблені науки:</label><br>
+        <select id="study" name="study" tabindex="20">
+            <optgroup label="Фундаментальні">
+                <option value="math">Математика</option>
+                <option value="phys">Фізика</option>
+                <option value="chem">Механіка</option>
+            </optgroup>
+            <optgroup label="Природничі">
+                <option value="prog">Біологія</option>
+                <option value="algo">Анатомія</option>
+                <option value="os">Хімія</option>
+            </optgroup>
+            <optgroup label="Гуманітарні">
+                <option value="hist">Історія</option>
+                <option value="phil">Філософія</option>
+                <option value="ling">Мова</option>
+            </optgroup>
+            <optgroup label="Додаткові">
+                <option value="sport">Спорт</option>
+                <option value="art">Мистецтво</option>
+                <option value="music">Музика</option>
+            </optgroup>
+        </select><br><br>
+
+
+        <label for="city">Місто проживання:</label><br>
+        <input id="city" name="city" list="cities" placeholder="Введіть місто" tabindex="21">
+        <datalist id="cities">
+            <option value="Kyiv">
+            <option value="Lviv">
+            <option value="Chernivtsi">
+            <option value="Odesa">
+            <option value="Dnipro">
+        </datalist>
+    </fieldset>
+
+    <p>
+        <button type="submit" tabindex="22">Відправити</button>
+        <button type="reset" tabindex="23">Скасувати</button>
+    </p>
+</form>
+
+<hr>
+<form action="" method="post" enctype="multipart/form-data" accept-charset="utf-8">
+    <fieldset>
+        <legend>Завантаження файлів</legend>
+
+        <label for="nick">Ім'я користувача:</label><br>
+        <input id="nick" name="nickname" type="text" placeholder="Наприклад: student123" tabindex="24" required><br><br>
+
+        <label for="emailB">Eлектронна пошта:</label><br>
+        <input id="emailB" name="email_post" type="email" placeholder="email@example.com"
+               autocomplete="off"
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               tabindex="25" required><br><br>
+
+        <label for="phoneB">Мобільний номер:</label><br>
+        <input id="phoneB" name="phone_post" type="tel" placeholder="+380XXXXXXXXX"
+               pattern="^\+?\d{9,15}$"
+               tabindex="26"><br><br>
+
+        <label for="notes">Додатково:</label><br>
+        <textarea id="notes" name="notes" rows="3" cols="50" placeholder="Ваша думка..." tabindex="27"></textarea><br><br>
+
+
+        <label for="audio">Завантажте аудіофайли (можна декілька):</label><br>
+        <input id="audio" name="audio_files[]" type="file"
+               accept="audio/*"
+               multiple
+               tabindex="28" required><br><br>
+
+        <label for="favsong">Улюблена пісня:</label><br>
+        <input id="favsong" name="favsong" list="songs" placeholder="Пошук пісні..." tabindex="29">
+        <datalist id="songs">
+            <option value="Cherry">
+            <option value="White Mustang">
+            <option value="Young & beautiful">
+        </datalist><br><br>
+
+        <button type="submit" tabindex="30">Відправити</button>
+        <button type="reset" tabindex="31">Скасувати</button>
+
+    </fieldset>
+</form>
+<hr>
+</body>
+</html>
