@@ -1,0 +1,175 @@
+/* Встановлення базових стилів для всього документа */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Сучасний, чистий шрифт */
+    background-color: #f4f7f6; /* Легкий сірий фон */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Стилізація заголовка */
+h1 {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Стилізація контейнера форми */
+form {
+    max-width: 650px; /* Обмеження ширини форми */
+    margin: 20px auto; /* Центрування форми */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px; /* Заокруглені кути */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Легка тінь для глибини */
+}
+
+/* Стилізація розділів форми (fieldset) */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+
+/* Стилізація заголовків розділів (legend) */
+legend {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #333;
+    padding: 0 10px;
+    margin-left: -5px;
+}
+
+/* Стилізація елементів керування */
+label {
+    display: block; /* Кожен label на новому рядку */
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* Важливо для коректної ширини */
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+/* Фокусування на полях вводу */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff; /* Яскравий акцентний колір */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Стилізація textarea */
+textarea {
+    resize: vertical; /* Дозволити зміну розміру лише по вертикалі */
+    min-height: 100px;
+}
+
+/* Стилізація радіокнопок та чекбоксів */
+fieldset div p {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Стилізація групи радіокнопок/чекбоксів для кращої читабельності */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px; /* Відступ після елемента */
+}
+
+/* Стилізація міток для радіо/чекбоксів, щоб вони були на одному рядку з елементами */
+fieldset div label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 0;
+}
+
+/* Стилізація елементів select */
+select {
+    appearance: none; /* Видалення стандартної стрілки в деяких браузерах */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M287%2095.8L146.2%20236.4%205.4%2095.8z%22%2F%3E%3C%2Fsvg%3E'); /* Кастомна стрілка */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px;
+    padding-right: 30px; /* Простір для стрілки */
+}
+
+/* Стилізація кнопок */
+button[type="submit"],
+button[type="reset"] {
+    padding: 12px 25px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилізація кнопки відправлення (Submit) */
+button[type="submit"] {
+    background-color: #007bff; /* Основний акцентний колір */
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Стилізація кнопки скасування/скидання (Reset) */
+button[type="reset"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+}
+
+/* Додаткові стилі для секції кнопок */
+form > p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Стилізація горизонтальної лінії */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    margin: 40px auto;
+    max-width: 650px;
+}

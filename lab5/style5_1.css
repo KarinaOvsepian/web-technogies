@@ -1,0 +1,103 @@
+/* Базові стилі та скидання */
+.level-1, .level-2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Елемент div (.travel-plan) */
+.travel-plan {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* Заголовок 1-го рівня (h1) */
+.travel-plan h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Маркерований список 1-го рівня (ul.level-1) */
+.level-1 {
+    background-color: rgb(103, 158, 128);
+    padding: 0 20px 0 10px;
+}
+
+/* Загальні стилі для LI-елементів (маркери) */
+.level-1-item, .level-2-item {
+    list-style-position: inside;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+/* Елементи списку 1-го рівня (li.level-1-item) */
+.level-1-item {
+    padding-left: 25px;
+    background-image: url("rule.png");
+    background-position: 0 10px;
+}
+
+/* Елементи списку 2-го рівня (li.level-2-item) */
+.level-2-item {
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    margin-bottom: 10px;
+    padding-left: 40px;
+    background-position: 10px 50%;
+    background-image: url("ad_units.png");
+}
+
+/* Індивідуальні іконки для LI-елементів 2-го рівня */
+.airplane-ticket {
+    background-image: url("airplane_ticket.png");
+}
+
+.hotel {
+    background-image: url("hotel.png");
+}
+
+.car-rental {
+    background-image: url("car_rental.png");
+}
+
+.local_bar {
+    background-image: url("local_bar.png");
+}
+
+.casino {
+    background-image: url("casino.png");
+}
+
+.museum {
+    background-image: url("museum.png");
+}
+
+.festival {
+    background-image: url("festival.png");
+}
+
+/* Елемент span (загальні стилі) */
+.span-level-1, .span-level-2 {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* Елемент span в списку 1-го рівня (.span-level-1) */
+.span-level-1 {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+/* Елемент span в списку 2-го рівня (.span-level-2) */
+.span-level-2 {
+    background-color: rgb(218, 106, 32);
+}
