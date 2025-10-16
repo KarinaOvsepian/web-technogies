@@ -1,0 +1,55 @@
+table {
+    width: 700px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+thead th {
+    font-weight: bold;
+    padding: 15px;
+}
+
+thead th:nth-child(1) {
+    background-color: rgb(230, 180, 180);
+}
+
+thead th:nth-child(2) {
+    background-color: rgb(220, 150, 150);
+}
+
+thead th:nth-child(3) {
+    background-color: rgb(220, 150, 150);
+}
+
+thead th:nth-child(4) {
+    background-color: rgb(160, 80, 80);
+}
+
+thead th:nth-child(5) {
+    background-color: rgb(120, 40, 40);
+}
+
+tbody tr {
+    background-color: rgb(230, 180, 180);
+    text-align: center;
+    color: dimgrey;
+}
+
+tbody td:nth-child(1) {
+    color: white;
+    background-color: rgb(192, 80, 77);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(243, 219, 219);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(229, 184, 183);
+}

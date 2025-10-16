@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    line-height: 20px;
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+form {
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    border: 1px solid lightgrey;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    padding: 0 10px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: dimgray;
+    font-size: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+textarea,
+select,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: mediumblue;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+fieldset div p {
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+fieldset div label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    padding: 12px 25px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+button[type="submit"] {
+    background-color: mediumblue;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: royalblue;
+    transform: translateY(-1px);
+}
+
+
+button[type="reset"] {
+    background-color: gray;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: dimgray;
+    transform: translateY(-1px);
+}
+
+form > p {
+    text-align: center;
+    margin-top: 30px;
+}
