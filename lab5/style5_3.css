@@ -36,14 +36,13 @@ legend {
     padding: 0 10px;
 }
 
-
 label {
     display: block;
     margin-bottom: 5px;
     margin-top: 15px;
     font-weight: 600;
-    color: dimgray;
-    font-size: 25px;
+    color: black;
+    font-size: 15px;
 }
 
 input[type="text"],
