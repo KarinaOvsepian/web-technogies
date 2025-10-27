@@ -1,0 +1,36 @@
+.contents {
+  padding: 20px;
+  text-align: justify;
+}
+
+.upper-text {
+  background-color: #7a0d0d;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.main-text {
+  background-color: #b78d8d;
+  color: #3a0000;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+}
+
+.inner-block {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.left-text, .right-text {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  background-color: #9c0d0d;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 15px 2%;
+}
