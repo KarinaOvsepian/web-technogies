@@ -1,0 +1,117 @@
+:root {
+  --color-accent: #444;
+  --color-main: #777;
+}
+
+.accent-text {
+  color: var(--color-accent);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sub-text {
+  color: var(--color-main);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.temperature {
+  display: flex;
+  align-items: flex-start;
+}
+
+.location {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.current-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-cloud {
+  width: 60px;
+  height: 60px;
+  background: url("icons/iconfinder_weather04.png") no-repeat center/contain;
+  margin-right: 15px;
+}
+.temperature-number {
+  font-size: 36px;
+}
+
+.measurement-unit {
+  padding-top: 5px;
+}
+
+.forecast-day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 1px solid #ccc;
+}
+.forecast-day:last-child {
+  border-bottom: 1px solid #ccc;
+}
+
+.day-name {
+  width: 100px;
+}
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.temp-range {
+  width: 70px;
+  text-align: right;
+}
+
+.pollen {
+  width: 70px;
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.icon-rain-thunder {
+  background-image: url("icons/iconfinder_weather07.png");
+}
+
+.icon-sun {
+  background-image: url("icons/iconfinder_weather01.png");
+}
+
+.icon-partly-cloudy-night {
+  background-image: url("icons/iconfinder_weather02.png");
+}
+
+.icon-rain {
+  background-image: url("icons/iconfinder_weather03.png");
+}
