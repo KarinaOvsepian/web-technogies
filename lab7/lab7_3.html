@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="style7_3.css">
+</head>
+<body>
+<div class="form">
+    <form method="post" action="" accept-charset="utf-8">
+        <header class="form-header">
+            <span class="default-text">Заповніть форму</span>
+            <span class="hover-text">Ми вдячні вам</span>
+        </header>
+        <div class="column-left">
+            <label for="login" class="label">Login</label>
+            <input id="login" class="input text" name="login" type="text" tabindex="1" required value="">
+            <label for="pwd" class="label">Password</label>
+            <input id="pwd" class="input" name="password" type="password" tabindex="3">
+            <label for="fname" class="label">First name</label>
+            <input id="fname" class="input text" name="fname" type="text" tabindex="5" required value="">
+        </div>
+        <div class="column-right">
+            <label for="email" class="label">Email</label>
+            <input id="email" class="input text" name="email" type="email" tabindex="2">
+            <label for="rpwd" class="label">Repeat password</label>
+            <input id="rpwd" class="input" name="repeat-password" type="password" tabindex="4">
+            <label for="lname" class="label">Last name</label>
+            <input id="lname" class="input text" name="lname" type="text" tabindex="6" required value="">
+        </div>
+        <div class="full-width">
+            <label for="about" class="label">About me</label>
+            <textarea id="about" class="textarea" name="about" rows="4" cols="50" tabindex="7"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="button" id="reset" type="reset" tabindex="8">reset</button>
+            <button class="button" id="submit" type="submit" tabindex="9">ok</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
